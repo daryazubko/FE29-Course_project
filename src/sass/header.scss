@@ -1,0 +1,120 @@
+header {
+  padding: 0 0 114px;
+}
+.header {
+  background-image: url(../img/header-bg.png);
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.header::before {
+  content: "";
+  background-color: rgba(37, 43, 73, 0.8);
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.header-wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+  align-items: center;
+  line-height: 90px;
+  border-bottom: 1px solid #babbc5;
+}
+.logo {
+  color: #656980;
+  font-size: 1.5624rem;
+  font-weight: 700;
+  margin: 0 15px;
+}
+.logo::after {
+  content: "BOX";
+  display: inline-block;
+  color: $white;
+  font-weight: 300;
+}
+.navigation {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 15px;
+}
+.navigation-item {
+  margin: 0 15px;
+}
+.navigation-item:last-child {
+  margin-right: 0;
+}
+.navigation-item:first-child {
+  margin-left: 0;
+}
+.navigation-item a {
+  display: inline-block;
+  color: $white;
+  font-size: $h6;
+  font-weight: $fw700;
+}
+.navigation-item a:hover {
+  color: $white;
+  line-height: 84px;
+  border-bottom: $bd_hover;
+}
+.navigation-item a:active {
+  color: $navigation_active;
+  line-height: 84px;
+  border-bottom: $bd_active;
+}
+.main_title {
+  font-size: $h1;
+  font-weight: $fw900;
+  text-align: center;
+  color: $white;
+  margin-top: 130px;
+  margin-bottom: 31px;
+  text-transform: uppercase;
+}
+.header-text {
+  margin-bottom: 82px;
+}
+.header-text p {
+  color: $white;
+  font-size: $h4;
+  font-weight: $fw400;
+  text-align: center;
+}
+.burger {
+  width: 35px;
+  height: 35px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  margin: 0 15px;
+}
+.fa-bars {
+  font-size: 35px;
+}
+@media (max-width: 671px) {
+  .burger {
+    display: flex;
+  }
+  .navigation {
+    display: none;
+  }
+  .main_title {
+    font-size: $h2;
+  }
+  .header-text p {
+    font-size: $h5;
+  }
+}

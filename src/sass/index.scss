@@ -1,0 +1,57 @@
+@import "./variables.scss";
+@import "./fonts.scss";
+@import "./header.scss";
+@import "./features.scss";
+@import "./portfolio.scss";
+@import "./team.scss";
+@import "./slider.scss";
+@import "./download.scss";
+@import "./about.scss";
+@import "./footer.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+html {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+}
+.container {
+  position: relative;
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: auto;
+  z-index: 2;
+}
+section {
+  padding: 114px 0;
+}
+.btn {
+  display: block;
+  margin: auto;
+  max-width: 370px;
+  padding: 0 30px;
+  height: 80px;
+  border: none;
+  background-color: $button_normal;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.btn a {
+  color: $white;
+  font-size: $h4;
+  font-weight: $fw900;
+}
+
+.btn:hover {
+  background-color: $button_hover;
+  transform: scale(1.05);
+  transition: 0.5s;
+}
+.btn:active {
+  background-color: $button_active;
+}

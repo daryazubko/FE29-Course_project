@@ -1,0 +1,46 @@
+.about {
+  background-color: #353c65;
+}
+.about-wrap {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+
+  flex-wrap: wrap;
+}
+.about-location {
+  max-width: 370px;
+}
+.about-title {
+  text-transform: uppercase;
+  font-size: $h5;
+  font-weight: $fw700;
+  color: $white;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.about-text {
+  font-size: $h5;
+  font-weight: $fw400;
+  color: $white;
+  text-align: center;
+}
+.about-icons {
+  text-align: center;
+}
+.about-contact {
+  max-width: 370px;
+}
+.about-info {
+  max-width: 370px;
+}
+@media (max-width: 917px) {
+  .about-wrap {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-location,
+  .about-contact {
+    margin-bottom: 30px;
+  }
+}
